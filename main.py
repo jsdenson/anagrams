@@ -5,23 +5,29 @@
 
 from tkinter import *
 
-
 '''
 import httplib2
+
 def getnetwords():
     url = 'http://www.mieliestronk.com/corncob_lowercase.txt'
     http = httplib2.Http()
     content = http.request(url)[1]
     content = str(content, 'utf-8')
     wlist = content.split()
-    #for word in wlist:
+    for j in range(len(wlist)):
     #    print(word, end=' ')
+        wlist[j] += '\n'
+    with open('wurds.txt', 'w') as f:
+        f.writelines(wlist)
+        f.close()
     return wlist
-'''
+#'''
 
 def getwords():
     wlist = []
-    with open('words.txt', 'r') as f:
+    #getnetwords()
+
+    with open('wurds.txt', 'r') as f:
         wlist = f.readlines()
         f.close()
     for j in range(len(wlist)):
