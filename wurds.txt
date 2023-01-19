@@ -8563,6 +8563,7 @@ clamour
 clamoured
 clamouring
 clamours
+clamor
 clamp
 clampdown
 clamped
@@ -46941,6 +46942,7 @@ slobbering
 slobbers
 slobbery
 slobs
+sloe
 slog
 slogan
 slogans
